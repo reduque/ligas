@@ -1,0 +1,197 @@
+{
+  "_meta": {
+    "sources": [
+      "loopback/common/models",
+      "loopback/server/models",
+      "../common/models",
+      "./models"
+    ],
+    "mixins": [
+      "loopback/common/mixins",
+      "loopback/server/mixins",
+      "../common/mixins",
+      "./mixins"
+    ]
+  },
+  "User": {
+    "dataSource": "db"
+  },
+  "AccessToken": {
+    "dataSource": "db",
+    "public": false
+  },
+  "ACL": {
+    "dataSource": "db",
+    "public": false
+  },
+  "RoleMapping": {
+    "dataSource": "db",
+    "public": false
+  },
+  "Role": {
+    "dataSource": "db",
+    "public": false
+  },
+  "BaseballBattingAgainstPitchers": {
+    "dataSource": "db_ligas",
+    "public": true
+  },
+  "BaseballPitchingAgainstBatters": {
+    "dataSource": "db_ligas",
+    "public": true
+  },
+  "BaseballBattingSplits": {
+    "dataSource": "db_ligas",
+    "public": true
+  },
+  "BaseballBattingStats": {
+    "dataSource": "db_ligas",
+    "public": true
+  },
+  "BaseballPitchingSplits": {
+    "dataSource": "db_ligas",
+    "public": true
+  },
+  "BaseballFieldingStats": {
+    "dataSource": "db_ligas",
+    "public": true
+  },
+  "BaseballPitchingStats": {
+    "dataSource": "db_ligas",
+    "public": true
+  },
+  "BaseballSplitsBattingSubcategory": {
+    "dataSource": "db_ligas",
+    "public": true
+  },
+  "BaseballSettings": {
+    "dataSource": "db_ligas",
+    "public": true
+  },
+  "BaseballSplitsBattingCategory": {
+    "dataSource": "db_ligas",
+    "public": true
+  },
+  "BaseballSplitsPitchingCategory": {
+    "dataSource": "db_ligas",
+    "public": true
+  },
+  "BaseballSplitsPitchingSubcategory": {
+    "dataSource": "db_ligas",
+    "public": true
+  },
+  "BaseballTeamSettings": {
+    "dataSource": "db_ligas",
+    "public": true
+  },
+  "Game": {
+    "dataSource": "db_ligas",
+    "public": true
+  },
+  "Division": {
+    "dataSource": "db_ligas",
+    "public": true
+  },
+  "Category": {
+    "dataSource": "db_ligas",
+    "public": true
+  },
+  "BoxScorePitchingStats": {
+    "dataSource": "db_ligas",
+    "public": true
+  },
+  "BoxScoreFieldingStats": {
+    "dataSource": "db_ligas",
+    "public": true
+  },
+  "BoxScoreBattingStats": {
+    "dataSource": "db_ligas",
+    "public": true
+  },
+  "League": {
+    "dataSource": "db_ligas",
+    "public": true
+  },
+  "GameSubstitution": {
+    "dataSource": "db_ligas",
+    "public": true
+  },
+  "GameAvailability": {
+    "dataSource": "db_ligas",
+    "public": true
+  },
+  "GameState": {
+    "dataSource": "db_ligas",
+    "public": true
+  },
+  "GameScoreboard": {
+    "dataSource": "db_ligas",
+    "public": true
+  },
+  "GamePlayboxPlay": {
+    "dataSource": "db_ligas",
+    "public": true
+  },
+  "GamePlaybox": {
+    "dataSource": "db_ligas",
+    "public": true
+  },
+  "Venue": {
+    "dataSource": "db_ligas",
+    "public": true
+  },
+  "GamePlay": {
+    "dataSource": "db_ligas",
+    "public": true
+  },
+  "UserTeam": {
+    "dataSource": "db_ligas",
+    "public": true
+  },
+  "UserLeague": {
+    "dataSource": "db_ligas",
+    "public": true
+  },
+  "UmpiresGroupUmpire": {
+    "dataSource": "db_ligas",
+    "public": true
+  },
+  "UmpiresGroup": {
+    "dataSource": "db_ligas",
+    "public": true
+  },
+  "Standings": {
+    "dataSource": "db_ligas",
+    "public": true
+  },
+  "Team": {
+    "dataSource": "db_ligas",
+    "public": true
+  },
+  "Lineup": {
+    "dataSource": "db_ligas",
+    "public": true
+  },
+  "LineupPlayer": {
+    "dataSource": "db_ligas",
+    "public": true
+  },
+  "Member": {
+    "dataSource": "db_ligas",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "Sport": {
+    "dataSource": "db_ligas",
+    "public": true
+  },
+  "Season": {
+    "dataSource": "db_ligas",
+    "public": true
+  },
+  "Stage": {
+    "dataSource": "db_ligas",
+    "public": true
+  }
+}

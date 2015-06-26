@@ -1,0 +1,899 @@
+{
+  "name": "BaseballBattingSplits",
+  "base": "PersistedModel",
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "mysql": {
+    "schema": "ligas",
+    "table": "baseball_batting_splits"
+  },
+  "properties": {
+    "baseballbattingsplitsId": {
+      "type": "Number",
+      "id": true,
+      "required": true,
+      "length": null,
+      "precision": 10,
+      "scale": 0,
+      "mysql": {
+        "columnName": "baseballBattingSplits_id",
+        "dataType": "int",
+        "dataLength": null,
+        "dataPrecision": 10,
+        "dataScale": 0,
+        "nullable": "N"
+      },
+      "_selectable": false
+    },
+    "fkUserId": {
+      "type": "Number",
+      "required": true,
+      "length": null,
+      "precision": 10,
+      "scale": 0,
+      "mysql": {
+        "columnName": "fk_user_id",
+        "dataType": "int",
+        "dataLength": null,
+        "dataPrecision": 10,
+        "dataScale": 0,
+        "nullable": "N"
+      },
+      "_selectable": false
+    },
+    "fkTeamId": {
+      "type": "Number",
+      "required": true,
+      "length": null,
+      "precision": 10,
+      "scale": 0,
+      "mysql": {
+        "columnName": "fk_team_id",
+        "dataType": "int",
+        "dataLength": null,
+        "dataPrecision": 10,
+        "dataScale": 0,
+        "nullable": "N"
+      },
+      "_selectable": false
+    },
+    "fkStageId": {
+      "type": "Number",
+      "required": true,
+      "length": null,
+      "precision": 10,
+      "scale": 0,
+      "mysql": {
+        "columnName": "fk_stage_id",
+        "dataType": "int",
+        "dataLength": null,
+        "dataPrecision": 10,
+        "dataScale": 0,
+        "nullable": "N"
+      },
+      "_selectable": false
+    },
+    "fkBaseballsplitsbattingsubcategoryId": {
+      "type": "Number",
+      "required": true,
+      "length": null,
+      "precision": 10,
+      "scale": 0,
+      "mysql": {
+        "columnName": "fk_baseballSplitsBattingSubcategory_id",
+        "dataType": "int",
+        "dataLength": null,
+        "dataPrecision": 10,
+        "dataScale": 0,
+        "nullable": "N"
+      },
+      "_selectable": false
+    },
+    "baseballbattingsplitsGamesplayed": {
+      "type": "Number",
+      "required": false,
+      "length": null,
+      "precision": 10,
+      "scale": 0,
+      "mysql": {
+        "columnName": "baseballBattingSplits_gamesPlayed",
+        "dataType": "int",
+        "dataLength": null,
+        "dataPrecision": 10,
+        "dataScale": 0,
+        "nullable": "Y"
+      },
+      "_selectable": true
+    },
+    "baseballbattingsplitsAtbats": {
+      "type": "Number",
+      "required": false,
+      "length": null,
+      "precision": 10,
+      "scale": 0,
+      "mysql": {
+        "columnName": "baseballBattingSplits_atBats",
+        "dataType": "int",
+        "dataLength": null,
+        "dataPrecision": 10,
+        "dataScale": 0,
+        "nullable": "Y"
+      },
+      "_selectable": true
+    },
+    "baseballbattingsplitsRuns": {
+      "type": "Number",
+      "required": false,
+      "length": null,
+      "precision": 10,
+      "scale": 0,
+      "mysql": {
+        "columnName": "baseballBattingSplits_runs",
+        "dataType": "int",
+        "dataLength": null,
+        "dataPrecision": 10,
+        "dataScale": 0,
+        "nullable": "Y"
+      },
+      "_selectable": true
+    },
+    "baseballbattingsplitsHits": {
+      "type": "Number",
+      "required": false,
+      "length": null,
+      "precision": 10,
+      "scale": 0,
+      "mysql": {
+        "columnName": "baseballBattingSplits_hits",
+        "dataType": "int",
+        "dataLength": null,
+        "dataPrecision": 10,
+        "dataScale": 0,
+        "nullable": "Y"
+      },
+      "_selectable": true
+    },
+    "baseballbattingsplitsDoubles": {
+      "type": "Number",
+      "required": false,
+      "length": null,
+      "precision": 10,
+      "scale": 0,
+      "mysql": {
+        "columnName": "baseballBattingSplits_doubles",
+        "dataType": "int",
+        "dataLength": null,
+        "dataPrecision": 10,
+        "dataScale": 0,
+        "nullable": "Y"
+      },
+      "_selectable": true
+    },
+    "baseballbattingsplitsTriples": {
+      "type": "Number",
+      "required": false,
+      "length": null,
+      "precision": 10,
+      "scale": 0,
+      "mysql": {
+        "columnName": "baseballBattingSplits_triples",
+        "dataType": "int",
+        "dataLength": null,
+        "dataPrecision": 10,
+        "dataScale": 0,
+        "nullable": "Y"
+      },
+      "_selectable": true
+    },
+    "baseballbattingsplitsHomeruns": {
+      "type": "Number",
+      "required": false,
+      "length": null,
+      "precision": 10,
+      "scale": 0,
+      "mysql": {
+        "columnName": "baseballBattingSplits_homeRuns",
+        "dataType": "int",
+        "dataLength": null,
+        "dataPrecision": 10,
+        "dataScale": 0,
+        "nullable": "Y"
+      },
+      "_selectable": true
+    },
+    "baseballbattingsplitsRunsbattledin": {
+      "type": "Number",
+      "required": false,
+      "length": null,
+      "precision": 10,
+      "scale": 0,
+      "mysql": {
+        "columnName": "baseballBattingSplits_runsBattledIn",
+        "dataType": "int",
+        "dataLength": null,
+        "dataPrecision": 10,
+        "dataScale": 0,
+        "nullable": "Y"
+      },
+      "_selectable": true
+    },
+    "baseballbattingsplitsTotalbases": {
+      "type": "Number",
+      "required": false,
+      "length": null,
+      "precision": 10,
+      "scale": 0,
+      "mysql": {
+        "columnName": "baseballBattingSplits_totalBases",
+        "dataType": "int",
+        "dataLength": null,
+        "dataPrecision": 10,
+        "dataScale": 0,
+        "nullable": "Y"
+      },
+      "_selectable": true
+    },
+    "baseballbattingsplitsWalks": {
+      "type": "Number",
+      "required": false,
+      "length": null,
+      "precision": 10,
+      "scale": 0,
+      "mysql": {
+        "columnName": "baseballBattingSplits_walks",
+        "dataType": "int",
+        "dataLength": null,
+        "dataPrecision": 10,
+        "dataScale": 0,
+        "nullable": "Y"
+      },
+      "_selectable": true
+    },
+    "baseballbattingsplitsIntentionalwalks": {
+      "type": "Number",
+      "required": false,
+      "length": null,
+      "precision": 10,
+      "scale": 0,
+      "mysql": {
+        "columnName": "baseballBattingSplits_intentionalWalks",
+        "dataType": "int",
+        "dataLength": null,
+        "dataPrecision": 10,
+        "dataScale": 0,
+        "nullable": "Y"
+      },
+      "_selectable": true
+    },
+    "baseballbattingsplitsSingles": {
+      "type": "Number",
+      "required": false,
+      "length": null,
+      "precision": 10,
+      "scale": 0,
+      "mysql": {
+        "columnName": "baseballBattingSplits_singles",
+        "dataType": "int",
+        "dataLength": null,
+        "dataPrecision": 10,
+        "dataScale": 0,
+        "nullable": "Y"
+      },
+      "_selectable": true
+    },
+    "baseballbattingsplitsStrikeouts": {
+      "type": "Number",
+      "required": false,
+      "length": null,
+      "precision": 10,
+      "scale": 0,
+      "mysql": {
+        "columnName": "baseballBattingSplits_strikeouts",
+        "dataType": "int",
+        "dataLength": null,
+        "dataPrecision": 10,
+        "dataScale": 0,
+        "nullable": "Y"
+      },
+      "_selectable": true
+    },
+    "baseballbattingsplitsStolenbases": {
+      "type": "Number",
+      "required": false,
+      "length": null,
+      "precision": 10,
+      "scale": 0,
+      "mysql": {
+        "columnName": "baseballBattingSplits_stolenBases",
+        "dataType": "int",
+        "dataLength": null,
+        "dataPrecision": 10,
+        "dataScale": 0,
+        "nullable": "Y"
+      },
+      "_selectable": true
+    },
+    "baseballbattingsplitsCaughtstealing": {
+      "type": "Number",
+      "required": false,
+      "length": null,
+      "precision": 10,
+      "scale": 0,
+      "mysql": {
+        "columnName": "baseballBattingSplits_caughtStealing",
+        "dataType": "int",
+        "dataLength": null,
+        "dataPrecision": 10,
+        "dataScale": 0,
+        "nullable": "Y"
+      },
+      "_selectable": true
+    },
+    "baseballbattingsplitsLeftonbase": {
+      "type": "Number",
+      "required": false,
+      "length": null,
+      "precision": 10,
+      "scale": 0,
+      "mysql": {
+        "columnName": "baseballBattingSplits_leftOnBase",
+        "dataType": "int",
+        "dataLength": null,
+        "dataPrecision": 10,
+        "dataScale": 0,
+        "nullable": "Y"
+      },
+      "_selectable": true
+    },
+    "baseballbattingsplitsRunnersinscoringposition": {
+      "type": "Number",
+      "required": false,
+      "length": null,
+      "precision": 10,
+      "scale": 0,
+      "mysql": {
+        "columnName": "baseballBattingSplits_runnersInScoringPosition",
+        "dataType": "int",
+        "dataLength": null,
+        "dataPrecision": 10,
+        "dataScale": 0,
+        "nullable": "Y"
+      },
+      "_selectable": true
+    },
+    "baseballbattingsplitsGroundedintodoubleplay": {
+      "type": "Number",
+      "required": false,
+      "length": null,
+      "precision": 10,
+      "scale": 0,
+      "mysql": {
+        "columnName": "baseballBattingSplits_groundedIntoDoublePlay",
+        "dataType": "int",
+        "dataLength": null,
+        "dataPrecision": 10,
+        "dataScale": 0,
+        "nullable": "Y"
+      },
+      "_selectable": true
+    },
+    "baseballbattingsplitsSacrifices": {
+      "type": "Number",
+      "required": false,
+      "length": null,
+      "precision": 10,
+      "scale": 0,
+      "mysql": {
+        "columnName": "baseballBattingSplits_sacrifices",
+        "dataType": "int",
+        "dataLength": null,
+        "dataPrecision": 10,
+        "dataScale": 0,
+        "nullable": "Y"
+      },
+      "_selectable": true
+    },
+    "baseballbattingsplitsSacrificebunts": {
+      "type": "Number",
+      "required": false,
+      "length": null,
+      "precision": 10,
+      "scale": 0,
+      "mysql": {
+        "columnName": "baseballBattingSplits_sacrificeBunts",
+        "dataType": "int",
+        "dataLength": null,
+        "dataPrecision": 10,
+        "dataScale": 0,
+        "nullable": "Y"
+      },
+      "_selectable": true
+    },
+    "baseballbattingsplitsSacrificeflies": {
+      "type": "Number",
+      "required": false,
+      "length": null,
+      "precision": 10,
+      "scale": 0,
+      "mysql": {
+        "columnName": "baseballBattingSplits_sacrificeFlies",
+        "dataType": "int",
+        "dataLength": null,
+        "dataPrecision": 10,
+        "dataScale": 0,
+        "nullable": "Y"
+      },
+      "_selectable": true
+    },
+    "baseballbattingsplitsExtrabasehits": {
+      "type": "Number",
+      "required": false,
+      "length": null,
+      "precision": 10,
+      "scale": 0,
+      "mysql": {
+        "columnName": "baseballBattingSplits_extraBaseHits",
+        "dataType": "int",
+        "dataLength": null,
+        "dataPrecision": 10,
+        "dataScale": 0,
+        "nullable": "Y"
+      },
+      "_selectable": true
+    },
+    "baseballbattingsplitsPlateappearances": {
+      "type": "Number",
+      "required": false,
+      "length": null,
+      "precision": 10,
+      "scale": 0,
+      "mysql": {
+        "columnName": "baseballBattingSplits_plateAppearances",
+        "dataType": "int",
+        "dataLength": null,
+        "dataPrecision": 10,
+        "dataScale": 0,
+        "nullable": "Y"
+      },
+      "_selectable": true
+    },
+    "baseballbattingsplitsInparkhomeruns": {
+      "type": "Number",
+      "required": false,
+      "length": null,
+      "precision": 10,
+      "scale": 0,
+      "mysql": {
+        "columnName": "baseballBattingSplits_inParkHomeRuns",
+        "dataType": "int",
+        "dataLength": null,
+        "dataPrecision": 10,
+        "dataScale": 0,
+        "nullable": "Y"
+      },
+      "_selectable": true
+    },
+    "baseballbattingsplitsGrandslams": {
+      "type": "Number",
+      "required": false,
+      "length": null,
+      "precision": 10,
+      "scale": 0,
+      "mysql": {
+        "columnName": "baseballBattingSplits_grandSlams",
+        "dataType": "int",
+        "dataLength": null,
+        "dataPrecision": 10,
+        "dataScale": 0,
+        "nullable": "Y"
+      },
+      "_selectable": true
+    },
+    "baseballbattingsplitsHitbypitch": {
+      "type": "Number",
+      "required": false,
+      "length": null,
+      "precision": 10,
+      "scale": 0,
+      "mysql": {
+        "columnName": "baseballBattingSplits_hitByPitch",
+        "dataType": "int",
+        "dataLength": null,
+        "dataPrecision": 10,
+        "dataScale": 0,
+        "nullable": "Y"
+      },
+      "_selectable": true
+    },
+    "baseballbattingsplitsBunts": {
+      "type": "Number",
+      "required": false,
+      "length": null,
+      "precision": 10,
+      "scale": 0,
+      "mysql": {
+        "columnName": "baseballBattingSplits_bunts",
+        "dataType": "int",
+        "dataLength": null,
+        "dataPrecision": 10,
+        "dataScale": 0,
+        "nullable": "Y"
+      },
+      "_selectable": true
+    },
+    "baseballbattingsplitsBuntouts": {
+      "type": "Number",
+      "required": false,
+      "length": null,
+      "precision": 10,
+      "scale": 0,
+      "mysql": {
+        "columnName": "baseballBattingSplits_buntOuts",
+        "dataType": "int",
+        "dataLength": null,
+        "dataPrecision": 10,
+        "dataScale": 0,
+        "nullable": "Y"
+      },
+      "_selectable": true
+    },
+    "baseballbattingsplitsFlyouts": {
+      "type": "Number",
+      "required": false,
+      "length": null,
+      "precision": 10,
+      "scale": 0,
+      "mysql": {
+        "columnName": "baseballBattingSplits_flyOuts",
+        "dataType": "int",
+        "dataLength": null,
+        "dataPrecision": 10,
+        "dataScale": 0,
+        "nullable": "Y"
+      },
+      "_selectable": true
+    },
+    "baseballbattingsplitsGroundouts": {
+      "type": "Number",
+      "required": false,
+      "length": null,
+      "precision": 10,
+      "scale": 0,
+      "mysql": {
+        "columnName": "baseballBattingSplits_groundOuts",
+        "dataType": "int",
+        "dataLength": null,
+        "dataPrecision": 10,
+        "dataScale": 0,
+        "nullable": "Y"
+      },
+      "_selectable": true
+    },
+    "baseballbattingsplitsReachedbaseerror": {
+      "type": "Number",
+      "required": false,
+      "length": null,
+      "precision": 10,
+      "scale": 0,
+      "mysql": {
+        "columnName": "baseballBattingSplits_reachedBaseError",
+        "dataType": "int",
+        "dataLength": null,
+        "dataPrecision": 10,
+        "dataScale": 0,
+        "nullable": "Y"
+      },
+      "_selectable": true
+    },
+    "baseballbattingsplitsReachedbasefielderchoice": {
+      "type": "Number",
+      "required": false,
+      "length": null,
+      "precision": 10,
+      "scale": 0,
+      "mysql": {
+        "columnName": "baseballBattingSplits_reachedBaseFielderChoice",
+        "dataType": "int",
+        "dataLength": null,
+        "dataPrecision": 10,
+        "dataScale": 0,
+        "nullable": "Y"
+      },
+      "_selectable": true
+    },
+    "baseballbattingsplitsStrikeoutslooking": {
+      "type": "Number",
+      "required": false,
+      "length": null,
+      "precision": 10,
+      "scale": 0,
+      "mysql": {
+        "columnName": "baseballBattingSplits_strikeoutsLooking",
+        "dataType": "int",
+        "dataLength": null,
+        "dataPrecision": 10,
+        "dataScale": 0,
+        "nullable": "Y"
+      },
+      "_selectable": true
+    },
+    "baseballbattingsplitsStrikeoutsswinging": {
+      "type": "Number",
+      "required": false,
+      "length": null,
+      "precision": 10,
+      "scale": 0,
+      "mysql": {
+        "columnName": "baseballBattingSplits_strikeoutsSwinging",
+        "dataType": "int",
+        "dataLength": null,
+        "dataPrecision": 10,
+        "dataScale": 0,
+        "nullable": "Y"
+      },
+      "_selectable": true
+    },
+    "baseballbattingsplitsNumberofpitches": {
+      "type": "Number",
+      "required": false,
+      "length": null,
+      "precision": 10,
+      "scale": 0,
+      "mysql": {
+        "columnName": "baseballBattingSplits_numberOfPitches",
+        "dataType": "int",
+        "dataLength": null,
+        "dataPrecision": 10,
+        "dataScale": 0,
+        "nullable": "Y"
+      },
+      "_selectable": true
+    },
+    "baseballbattingsplitsReachedbaseondefensiveinterference": {
+      "type": "Number",
+      "required": false,
+      "length": null,
+      "precision": 10,
+      "scale": 0,
+      "mysql": {
+        "columnName": "baseballBattingSplits_reachedBaseOnDefensiveInterference",
+        "dataType": "int",
+        "dataLength": null,
+        "dataPrecision": 10,
+        "dataScale": 0,
+        "nullable": "Y"
+      },
+      "_selectable": true
+    },
+    "baseballbattingsplitsReachedbaseonobstruction": {
+      "type": "Number",
+      "required": false,
+      "length": null,
+      "precision": 10,
+      "scale": 0,
+      "mysql": {
+        "columnName": "baseballBattingSplits_reachedBaseOnObstruction",
+        "dataType": "int",
+        "dataLength": null,
+        "dataPrecision": 10,
+        "dataScale": 0,
+        "nullable": "Y"
+      },
+      "_selectable": true
+    },
+    "baseballbattingsplitsAverage": {
+      "type": "String",
+      "required": false,
+      "length": null,
+      "precision": 4,
+      "scale": 3,
+      "mysql": {
+        "columnName": "baseballBattingSplits_average",
+        "dataType": "decimal",
+        "dataLength": null,
+        "dataPrecision": 4,
+        "dataScale": 3,
+        "nullable": "Y"
+      },
+      "_selectable": true
+    },
+    "baseballbattingsplitsOnbasepercentage": {
+      "type": "String",
+      "required": false,
+      "length": null,
+      "precision": 5,
+      "scale": 2,
+      "mysql": {
+        "columnName": "baseballBattingSplits_onBasePercentage",
+        "dataType": "decimal",
+        "dataLength": null,
+        "dataPrecision": 5,
+        "dataScale": 2,
+        "nullable": "Y"
+      },
+      "_selectable": true
+    },
+    "baseballbattingsplitsSluggingpercentage": {
+      "type": "String",
+      "required": false,
+      "length": null,
+      "precision": 4,
+      "scale": 3,
+      "mysql": {
+        "columnName": "baseballBattingSplits_sluggingPercentage",
+        "dataType": "decimal",
+        "dataLength": null,
+        "dataPrecision": 4,
+        "dataScale": 3,
+        "nullable": "Y"
+      },
+      "_selectable": true
+    },
+    "baseballbattingsplitsOnbaseplusslugging": {
+      "type": "String",
+      "required": false,
+      "length": null,
+      "precision": 4,
+      "scale": 3,
+      "mysql": {
+        "columnName": "baseballBattingSplits_onBasePlusSlugging",
+        "dataType": "decimal",
+        "dataLength": null,
+        "dataPrecision": 4,
+        "dataScale": 3,
+        "nullable": "Y"
+      },
+      "_selectable": true
+    },
+    "baseballbattingsplitsStolenbasespercentage": {
+      "type": "String",
+      "required": false,
+      "length": null,
+      "precision": 5,
+      "scale": 2,
+      "mysql": {
+        "columnName": "baseballBattingSplits_stolenBasesPercentage",
+        "dataType": "decimal",
+        "dataLength": null,
+        "dataPrecision": 5,
+        "dataScale": 2,
+        "nullable": "Y"
+      },
+      "_selectable": true
+    },
+    "baseballbattingsplitsGroundoutstoflyoutsratio": {
+      "type": "String",
+      "required": false,
+      "length": null,
+      "precision": 5,
+      "scale": 2,
+      "mysql": {
+        "columnName": "baseballBattingSplits_groundOutsToFlyOutsRatio",
+        "dataType": "decimal",
+        "dataLength": null,
+        "dataPrecision": 5,
+        "dataScale": 2,
+        "nullable": "Y"
+      },
+      "_selectable": true
+    },
+    "baseballbattingsplitsNumberofpitchesperatbat": {
+      "type": "String",
+      "required": false,
+      "length": null,
+      "precision": 4,
+      "scale": 2,
+      "mysql": {
+        "columnName": "baseballBattingSplits_numberOfPitchesPerAtBat",
+        "dataType": "decimal",
+        "dataLength": null,
+        "dataPrecision": 4,
+        "dataScale": 2,
+        "nullable": "Y"
+      },
+      "_selectable": true
+    },
+    "baseballbattingsplitsPlateappearancesperrbi": {
+      "type": "String",
+      "required": false,
+      "length": null,
+      "precision": 5,
+      "scale": 2,
+      "mysql": {
+        "columnName": "baseballBattingSplits_plateAppearancesPerRBI",
+        "dataType": "decimal",
+        "dataLength": null,
+        "dataPrecision": 5,
+        "dataScale": 2,
+        "nullable": "Y"
+      },
+      "_selectable": true
+    },
+    "baseballbattingsplitsPlateappearancesperhomerun": {
+      "type": "String",
+      "required": false,
+      "length": null,
+      "precision": 8,
+      "scale": 2,
+      "mysql": {
+        "columnName": "baseballBattingSplits_plateAppearancesPerHomeRun",
+        "dataType": "decimal",
+        "dataLength": null,
+        "dataPrecision": 8,
+        "dataScale": 2,
+        "nullable": "Y"
+      },
+      "_selectable": true
+    },
+    "baseballbattingsplitsPlateappearancesperstrikeout": {
+      "type": "String",
+      "required": false,
+      "length": null,
+      "precision": 5,
+      "scale": 2,
+      "mysql": {
+        "columnName": "baseballBattingSplits_plateAppearancesPerStrikeout",
+        "dataType": "decimal",
+        "dataLength": null,
+        "dataPrecision": 5,
+        "dataScale": 2,
+        "nullable": "Y"
+      },
+      "_selectable": true
+    },
+    "baseballbattingsplitsAtbatsperrbi": {
+      "type": "String",
+      "required": false,
+      "length": null,
+      "precision": 5,
+      "scale": 2,
+      "mysql": {
+        "columnName": "baseballBattingSplits_atBatsPerRBI",
+        "dataType": "decimal",
+        "dataLength": null,
+        "dataPrecision": 5,
+        "dataScale": 2,
+        "nullable": "Y"
+      },
+      "_selectable": true
+    },
+    "baseballbattingsplitsAtbatsperhomerun": {
+      "type": "String",
+      "required": false,
+      "length": null,
+      "precision": 8,
+      "scale": 2,
+      "mysql": {
+        "columnName": "baseballBattingSplits_atBatsPerHomeRun",
+        "dataType": "decimal",
+        "dataLength": null,
+        "dataPrecision": 8,
+        "dataScale": 2,
+        "nullable": "Y"
+      },
+      "_selectable": true
+    },
+    "baseballbattingsplitsAtbatsperstrikeout": {
+      "type": "String",
+      "required": false,
+      "length": null,
+      "precision": 5,
+      "scale": 2,
+      "mysql": {
+        "columnName": "baseballBattingSplits_atBatsPerStrikeout",
+        "dataType": "decimal",
+        "dataLength": null,
+        "dataPrecision": 5,
+        "dataScale": 2,
+        "nullable": "Y"
+      },
+      "_selectable": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": []
+}

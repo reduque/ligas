@@ -1,0 +1,16 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "db_ligas": {
+    "host": "localhost",
+    "port": 3306,
+    "url": "",
+    "database": "ligas",
+    "password": "admin",
+    "name": "db_ligas",
+    "user": "root",
+    "connector": "mysql"
+  }
+}
