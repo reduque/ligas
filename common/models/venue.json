@@ -1,5 +1,5 @@
 {
-  "name": "Venue",
+  "name": "Venue",  
   "base": "PersistedModel",
   "idInjection": false,
   "options": {
