@@ -45,7 +45,13 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "leagues": {
+      "type": "hasMany",
+      "model": "League",
+      "foreignKey": "fkSportId"
+    }
+  },
   "acls": [],
   "methods": []
 }

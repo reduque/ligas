@@ -110,16 +110,16 @@
   },
   "validations": [],
   "relations": {
-	 "members" : {
-		"type" : "belongsTo",
-		"model" : "Member",
-		"foreignKey" : "fk_user_id"
-	  },
-	  "leagues": {
-		"type" : "belongsTo",
-		"model" : "League",
-		"foreignKey" : "fk_league_id"
-	  }
+    "member": {
+      "type": "belongsTo",
+      "model": "Member",
+      "foreignKey": "fkUserId"
+    },
+    "league": {
+      "type": "belongsTo",
+      "model": "League",
+      "foreignKey": "fkLeagueId"
+    }
   },
   "acls": [],
   "methods": []

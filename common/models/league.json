@@ -302,12 +302,23 @@
   },
   "validations": [],
   "relations": {
-	 "members": {
-		 "type":"hasMany",
-		 "model" : "League",
-		 "foreignKey": "fk_league_id",
-		 "through" : "UserLeague"
-	 }},
+    "members": {
+      "type": "hasMany",
+      "model": "Member",
+      "foreignKey": "fkUserId",
+      "through": "UserLeague"
+    },
+    "sport": {
+      "type": "belongsTo",
+      "model": "Sport",
+      "foreignKey": "fkSportId"
+    },
+    "seasons": {
+      "type": "hasMany",
+      "model": "Season",
+      "foreignKey": "fkLeagueId"
+    }
+  },
   "acls": [],
   "methods": []
 }

@@ -350,12 +350,12 @@
   },
   "validations": [],
   "relations": {
-	 "leagues": {
-		 "type":"hasMany",
-		 "model" : "Member",
-		 "foreignKey": "fk_user_id",
-		 "through" : "UserLeague"
-	 }
+    "leagues": {
+      "type": "hasMany",
+      "model": "League",
+      "foreignKey": "fkLeagueId",
+      "through": "UserLeague"
+    }
   },
   "acls": [],
   "methods": []
