@@ -3,13 +3,11 @@
     "name": "db",
     "connector": "memory"
   },
-  "db_ligas": {
-    "host": "localhost",
+  "theMySQL": {
+    "host": "127.0.0.1",
     "port": 3306,
-    "url": "",
     "database": "ligas",
-    "password": "admin",
-    "name": "db_ligas",
+    "name": "theMySQL",
     "user": "root",
     "connector": "mysql"
   }

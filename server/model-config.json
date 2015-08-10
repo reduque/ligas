@@ -33,165 +33,163 @@
     "public": false
   },
   "BaseballBattingAgainstPitchers": {
-    "dataSource": "db_ligas",
-    "public": true
-  },
-  "BaseballPitchingAgainstBatters": {
-    "dataSource": "db_ligas",
-    "public": true
-  },
-  "BaseballBattingSplits": {
-    "dataSource": "db_ligas",
+    "dataSource": "db",
     "public": true
   },
   "BaseballBattingStats": {
-    "dataSource": "db_ligas",
+    "dataSource": "db",
     "public": true
   },
-  "BaseballPitchingSplits": {
-    "dataSource": "db_ligas",
+  "BaseballBattingSplits": {
+    "dataSource": "db",
     "public": true
   },
   "BaseballFieldingStats": {
-    "dataSource": "db_ligas",
+    "dataSource": "db",
+    "public": true
+  },
+  "BaseballPitchingAgainstBatters": {
+    "dataSource": "db",
+    "public": true
+  },
+  "BaseballPitchingSplits": {
+    "dataSource": "db",
     "public": true
   },
   "BaseballPitchingStats": {
-    "dataSource": "db_ligas",
-    "public": true
-  },
-  "BaseballSplitsBattingSubcategory": {
-    "dataSource": "db_ligas",
+    "dataSource": "db",
     "public": true
   },
   "BaseballSettings": {
-    "dataSource": "db_ligas",
+    "dataSource": "db",
     "public": true
   },
   "BaseballSplitsBattingCategory": {
-    "dataSource": "db_ligas",
+    "dataSource": "db",
+    "public": true
+  },
+  "BaseballSplitsBattingSubcategory": {
+    "dataSource": "db",
     "public": true
   },
   "BaseballSplitsPitchingCategory": {
-    "dataSource": "db_ligas",
+    "dataSource": "db",
     "public": true
   },
   "BaseballSplitsPitchingSubcategory": {
-    "dataSource": "db_ligas",
+    "dataSource": "db",
     "public": true
   },
   "BaseballTeamSettings": {
-    "dataSource": "db_ligas",
-    "public": true
-  },
-  "Game": {
-    "dataSource": "db_ligas",
-    "public": true
-  },
-  "Division": {
-    "dataSource": "db_ligas",
-    "public": true
-  },
-  "Category": {
-    "dataSource": "db_ligas",
-    "public": true
-  },
-  "BoxScorePitchingStats": {
-    "dataSource": "db_ligas",
-    "public": true
-  },
-  "BoxScoreFieldingStats": {
-    "dataSource": "db_ligas",
+    "dataSource": "db",
     "public": true
   },
   "BoxScoreBattingStats": {
-    "dataSource": "db_ligas",
+    "dataSource": "db",
     "public": true
   },
-  "League": {
-    "dataSource": "db_ligas",
+  "BoxScoreFieldingStats": {
+    "dataSource": "db",
     "public": true
   },
-  "GameSubstitution": {
-    "dataSource": "db_ligas",
+  "BoxScorePitchingStats": {
+    "dataSource": "db",
     "public": true
   },
-  "GameAvailability": {
-    "dataSource": "db_ligas",
+  "Category": {
+    "dataSource": "db",
     "public": true
   },
-  "GameState": {
-    "dataSource": "db_ligas",
+  "Division": {
+    "dataSource": "db",
     "public": true
   },
-  "GameScoreboard": {
-    "dataSource": "db_ligas",
-    "public": true
-  },
-  "GamePlayboxPlay": {
-    "dataSource": "db_ligas",
-    "public": true
-  },
-  "GamePlaybox": {
-    "dataSource": "db_ligas",
-    "public": true
-  },
-  "Venue": {
-    "dataSource": "db_ligas",
+  "Game": {
+    "dataSource": "db",
     "public": true
   },
   "GamePlay": {
-    "dataSource": "db_ligas",
+    "dataSource": "db",
     "public": true
   },
-  "UserTeam": {
-    "dataSource": "db_ligas",
+  "GameAvailability": {
+    "dataSource": "db",
     "public": true
   },
-  "UserLeague": {
-    "dataSource": "db_ligas",
+  "GamePlaybox": {
+    "dataSource": "db",
     "public": true
   },
-  "UmpiresGroupUmpire": {
-    "dataSource": "db_ligas",
+  "GamePlayboxPlay": {
+    "dataSource": "db",
     "public": true
   },
-  "UmpiresGroup": {
-    "dataSource": "db_ligas",
+  "GameScoreboard": {
+    "dataSource": "db",
     "public": true
   },
-  "Standings": {
-    "dataSource": "db_ligas",
+  "GameState": {
+    "dataSource": "db",
     "public": true
   },
-  "Team": {
-    "dataSource": "db_ligas",
+  "GameSubstitution": {
+    "dataSource": "db",
+    "public": true
+  },
+  "League": {
+    "dataSource": "db",
     "public": true
   },
   "Lineup": {
-    "dataSource": "db_ligas",
+    "dataSource": "db",
     "public": true
   },
   "LineupPlayer": {
-    "dataSource": "db_ligas",
+    "dataSource": "db",
     "public": true
   },
   "Member": {
-    "dataSource": "db_ligas",
-    "public": true,
-    "$promise": {},
-    "$resolved": true
-  },
-  "Sport": {
-    "dataSource": "db_ligas",
+    "dataSource": "db",
     "public": true
   },
   "Season": {
-    "dataSource": "db_ligas",
+    "dataSource": "db",
+    "public": true
+  },
+  "Sport": {
+    "dataSource": "db",
     "public": true
   },
   "Stage": {
-    "dataSource": "db_ligas",
+    "dataSource": "db",
+    "public": true
+  },
+  "Standings": {
+    "dataSource": "db",
+    "public": true
+  },
+  "Team": {
+    "dataSource": "db",
+    "public": true
+  },
+  "UmpiresGroup": {
+    "dataSource": "db",
+    "public": true
+  },
+  "UmpiresGroupUmpire": {
+    "dataSource": "db",
+    "public": true
+  },
+  "UserLeague": {
+    "dataSource": "db",
+    "public": true
+  },
+  "UserTeam": {
+    "dataSource": "db",
+    "public": true
+  },
+  "Venue": {
+    "dataSource": "db",
     "public": true
   }
 }

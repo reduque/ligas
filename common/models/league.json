@@ -43,22 +43,6 @@
       },
       "_selectable": false
     },
-    "fkSeasonId": {
-      "type": "Number",
-      "required": true,
-      "length": null,
-      "precision": 10,
-      "scale": 0,
-      "mysql": {
-        "columnName": "fk_season_id",
-        "dataType": "int",
-        "dataLength": null,
-        "dataPrecision": 10,
-        "dataScale": 0,
-        "nullable": "N"
-      },
-      "_selectable": false
-    },
     "leagueSubscription": {
       "type": "Number",
       "required": true,
@@ -74,22 +58,6 @@
         "nullable": "N"
       },
       "_selectable": false
-    },
-    "leagueIsactive": {
-      "type": "Number",
-      "required": false,
-      "length": null,
-      "precision": 3,
-      "scale": 0,
-      "mysql": {
-        "columnName": "league_isActive",
-        "dataType": "tinyint",
-        "dataLength": null,
-        "dataPrecision": 3,
-        "dataScale": 0,
-        "nullable": "Y"
-      },
-      "_selectable": true
     },
     "leagueShortname": {
       "type": "String",
@@ -302,23 +270,18 @@
   },
   "validations": [],
   "relations": {
+    "sport":{
+      "type":"belongsTo",
+      "model":"Sport",
+      "foreignKey":"sportId"
+    },
     "members": {
       "type": "hasMany",
       "model": "Member",
-      "foreignKey": "fkUserId",
-      "through": "UserLeague"
-    },
-    "sport": {
-      "type": "belongsTo",
-      "model": "Sport",
-      "foreignKey": "fkSportId"
-    },
-    "seasons": {
-      "type": "hasMany",
-      "model": "Season",
-      "foreignKey": "fkLeagueId"
+      "foreignKey": "fkLeagueId",
+      "through": "UserLeague"      
     }
   },
   "acls": [],
-  "methods": []
+  "methods": {}
 }

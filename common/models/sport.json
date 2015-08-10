@@ -46,12 +46,12 @@
   },
   "validations": [],
   "relations": {
-    "leagues": {
-      "type": "hasMany",
-      "model": "League",
-      "foreignKey": "fkSportId"
+    "leagues":{
+      "type":"hasMany",
+      "model":"League",
+      "foreignKey":"sportId"
     }
   },
   "acls": [],
-  "methods": []
+  "methods": {}
 }
