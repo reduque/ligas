@@ -77,7 +77,34 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "game":{
+      "type":"belongsTo",
+      "model":"Game",
+      "foreignKey":"fkGameId"
+    },
+    "team":{
+      "type":"belongsTo",
+      "model":"Team",
+      "foreignKey":"fkTeamId"
+    },
+    "players":{
+      "type": "hasMany",
+      "model": "Member",
+      "foreignKey": "fkLineupId",
+      "through": "UserLeague"
+    },
+    "defensiveLineupState":{
+      "type":"hasMany",
+      "model":"GameState",
+      "foreignKey":"fkLineupIdDefensive"
+    },
+    "offensiveLineupState":{
+      "type":"hasMany",
+      "model":"GameState",
+      "foreignKey":"fkLineupIdOffensive"
+    }
+  },
   "acls": [],
   "methods": {}
 }

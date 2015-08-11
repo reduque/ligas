@@ -349,7 +349,48 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "game":{
+      "type":"belongsTo",
+      "model":"Game",
+      "foreignKey":"fkGameId"
+    },
+    "pitcher":{
+      "type":"belongsTo",
+      "model":"Member",
+      "foreignKey":"userIdPitcher"
+    },
+    "batter":{
+      "type":"belongsTo",
+      "model":"Member",
+      "foreignKey":"userIdBatter"
+    },
+    "runnerOnFirst":{
+      "type":"belongsTo",
+      "model":"Member",
+      "foreignKey":"fkUserIdRunneronfirst"
+    },
+    "runnerOnSecond":{
+      "type":"belongsTo",
+      "model":"Member",
+      "foreignKey":"fkUserIdRunneronsecond"
+    },
+    "runnerOnThird":{
+      "type":"belongsTo",
+      "model":"Member",
+      "foreignKey":"fkUserIdRunneronthird"
+    },
+    "defensiveLineup":{
+      "type":"belongsTo",
+      "model":"Lineup",
+      "foreignKey":"fkLineupIdDefensive"
+    },
+    "offensiveLineup":{
+      "type":"belongsTo",
+      "model":"Lineup",
+      "foreignKey":"fkLineupIdOffensive"
+    }    
+  },
   "acls": [],
   "methods": {}
 }

@@ -119,7 +119,7 @@
       "type": "belongsTo",
       "model": "League",
       "foreignKey": "fkLeagueId"
-    }    
+    }       
   },
   "acls": [],
   "methods": {}

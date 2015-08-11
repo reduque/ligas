@@ -77,7 +77,18 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "category":{
+      "type": "belongsTo",
+      "model":"Category",
+      "foreignKey":"fkCategoryId"
+    },
+    "teams": {
+      "type":"hasMany",
+      "model":"Team",
+      "foreignKey":"fkDivisionId"
+    }
+  },
   "acls": [],
   "methods": {}
 }

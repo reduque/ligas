@@ -77,7 +77,13 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "team":{
+      "type":"hasMany",
+      "model":"Team",
+      "foreignKey":"fkBaseballteamsettingsId"
+    }
+  },
   "acls": [],
   "methods": {}
 }

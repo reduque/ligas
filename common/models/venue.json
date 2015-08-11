@@ -189,7 +189,23 @@
     }
   },
   "validations": [],
-  "relations": {},
+    "relations": {
+    "teams":{
+      "type":"hasMany",
+      "model":"Team",
+      "foreignKey":"fkVenueId"
+    },
+    "season":{
+      "type":"belongsTo",
+      "model":"Season",
+      "foreignKey":"fkSeasonId"
+    },
+    "games":{
+      "type":"hasMany",
+      "model":"Game",
+      "foreignKey":"fkVenueId"
+    }
+  },
   "acls": [],
   "methods": {}
 }

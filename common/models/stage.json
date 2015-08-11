@@ -45,7 +45,18 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "games": {
+      "type":"hasMany",
+      "model":"Game",
+      "foreignKey":"fkStageId"
+    },
+    "season": {
+      "type":"belongsTo",
+      "model":"Season",
+      "foreignKey":"fkSeasonId"
+    }
+  },
   "acls": [],
   "methods": {}
 }

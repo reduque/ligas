@@ -205,7 +205,18 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "member": {
+      "type": "belongsTo",
+      "model": "Member",
+      "foreignKey": "fkUserId"
+    },
+    "team": {
+      "type": "belongsTo",
+      "model": "Team",
+      "foreignKey": "fkTeamId"
+    }       
+  },
   "acls": [],
   "methods": {}
 }

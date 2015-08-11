@@ -157,7 +157,49 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "division":{
+      "type":"belongsTo",
+      "model":"Division",
+      "foreignKey":"fkDivisionId"
+    },
+    "venue":{
+      "type":"belongsTo",
+      "model":"Venue",
+      "foreignKey":"fkVenueId"
+    },
+    "setting":{
+      "type":"belongsTo",
+      "model":"BaseballTeamSettings",
+      "foreignKey":"fkBaseballteamsettingsId"
+    },
+    "members": {
+      "type": "hasMany",
+      "model": "Member",
+      "foreignKey": "fkTeamId",
+      "through": "UserTeam"      
+    },
+    "gameVisiting": {
+      "type":"hasMany",
+      "model":"Game",
+      "foreignKey":"fkTeamIdVisitor"
+    },
+    "gameHome":{
+      "type":"hasMany",
+      "model":"Game",
+      "foreignKey":"fkTeamIdHome"
+    },
+    "lineups":{
+      "type":"hasMany",
+      "model":"Lineup",
+      "foreignKey":"fkTeamId"
+    },
+    "gameAvaliabilities":{
+      "type":"hasMany",
+      "model":"GameAvailability",
+      "foreignKey":"fkTeamId"
+    }
+  },
   "acls": [],
   "methods": {}
 }

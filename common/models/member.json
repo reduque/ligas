@@ -306,6 +306,53 @@
       "model": "League",
       "foreignKey": "fkUserId",
       "through": "UserLeague"
+    },
+    "lineups":{
+      "type": "hasMany",
+      "model": "Lineup",
+      "foreignKey": "fkUserId",
+      "through": "LineupPlayer"
+    },    
+    "teams":{
+      "type": "hasMany",
+      "model": "Team",
+      "foreignKey": "fkUserId",
+      "through": "UserTeam"
+    },
+    "games":{
+      "type":"hasMany",
+      "model":"Game",
+      "foreignKey":"fkUserIdScorer"
+    },
+    "gameAvaliabilities":{
+      "type":"hasMany",
+      "model":"GameAvailability",
+      "foreignKey":"fkUserId"
+    },  
+    "pitcherState":{
+      "type":"hasMany",
+      "model":"GameState",
+      "foreignKey":"userIdPitcher"
+    },
+    "batterState":{
+      "type":"hasMany",
+      "model":"GameState",
+      "foreignKey":"userIdBatter"
+    },
+    "runnerOnFirstState":{
+      "type":"hasMany",
+      "model":"GameState",
+      "foreignKey":"fkUserIdRunneronfirst"
+    },
+    "runnerOnSecondState":{
+      "type":"hasMany",
+      "model":"GameState",
+      "foreignKey":"fkUserIdRunneronsecond"
+    },
+    "runnerOnThirdState":{
+      "type":"hasMany",
+      "model":"GameState",
+      "foreignKey":"fkUserIdRunneronthird"
     }
   },
   "acls": [],

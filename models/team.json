@@ -157,7 +157,23 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "division":{
+      "type":"belongsTo",
+      "model":"Division",
+      "foreignKey":"fkDivisionId"
+    },
+    "venue":{
+      "type":"belongsTo",
+      "model":"Venue",
+      "foreignKey":"fkVenueId"
+    },
+    "setting":{
+      "type":"belongsTo",
+      "model":"BaseballTeamSettings",
+      "foreignKey":"fkBaseballteamsettingsId"
+    }
+  },
   "acls": [],
   "methods": {}
 }

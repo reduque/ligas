@@ -93,7 +93,28 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "league":{
+      "type":"belongsTo",
+      "model":"League",
+      "foreignKey": "fkLeagueId"
+    },
+    "categories": {
+      "type":"hasMany",
+      "model":"Category",
+      "foreignKey":"fkSeasonId"
+    },
+    "venues": {
+      "type":"hasMany",
+      "model":"Venue",
+      "foreignKey":"fkSeasonId"
+    },
+    "stages": {
+      "type":"hasMany",
+      "model":"Stage",
+      "foreignKey":"fkSeasonId"
+    }
+  },
   "acls": [],
   "methods": {}
 }

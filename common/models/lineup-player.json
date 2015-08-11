@@ -141,7 +141,18 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "player": {
+      "type": "belongsTo",
+      "model": "Member",
+      "foreignKey": "fkUserId"
+    },
+    "lineup": {
+      "type": "belongsTo",
+      "model": "Team",
+      "foreignKey": "fkLineupId"
+    }       
+  },
   "acls": [],
   "methods": {}
 }

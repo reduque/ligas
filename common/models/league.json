@@ -280,6 +280,16 @@
       "model": "Member",
       "foreignKey": "fkLeagueId",
       "through": "UserLeague"      
+    },
+    "seasons":{
+      "type":"hasMany",
+      "model":"Season",
+      "foreignKey":"fkLeagueId"
+    },
+    "settings":{
+      "type":"hasMany",
+      "model":"BaseballSettings",
+      "foreignKey":"fkLeagueId"      
     }
   },
   "acls": [],

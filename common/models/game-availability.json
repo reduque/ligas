@@ -109,7 +109,23 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "game":{
+      "type":"belongsTo",
+      "model":"Game",
+      "foreignKey":"fkGameId"
+    },
+    "team":{
+      "type":"belongsTo",
+      "model":"Team",
+      "foreignKey":"fkTeamId"
+    },
+    "member":{
+      "type":"belongsTo",
+      "model":"Member",
+      "foreignKey":"fkUserId"
+    }
+  },
   "acls": [],
   "methods": {}
 }
